@@ -1,3 +1,26 @@
-body {
-    background-color: green;
+@import "fonts";
+$regular: "Helvetica Neue Roman";
+$bold: "Helvetica Neue Bold";
+
+//Colors
+$bg-color: #343539;
+$red: #ef483e;
+$secondary: #717174;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: $regular, sans-serif;
+    background-color: $bg-color;
+}
+
+.wrapper {
+    .title {
+        font-family: $bold, sans-serif;
+    }
 }

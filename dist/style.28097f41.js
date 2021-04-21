@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./fonts\\helveticaneuecyr-bold-webfont.woff2":[["helveticaneuecyr-bold-webfont.227f080b.woff2","../sass/fonts/helveticaneuecyr-bold-webfont.woff2"],"../sass/fonts/helveticaneuecyr-bold-webfont.woff2"],"./fonts\\helveticaneuecyr-bold-webfont.woff":[["helveticaneuecyr-bold-webfont.b93f223b.woff","../sass/fonts/helveticaneuecyr-bold-webfont.woff"],"../sass/fonts/helveticaneuecyr-bold-webfont.woff"],"./fonts\\helveticaneuecyr-roman-webfont.woff2":[["helveticaneuecyr-roman-webfont.e20347f6.woff2","../sass/fonts/helveticaneuecyr-roman-webfont.woff2"],"../sass/fonts/helveticaneuecyr-roman-webfont.woff2"],"./fonts\\helveticaneuecyr-roman-webfont.woff":[["helveticaneuecyr-roman-webfont.297c7a54.woff","../sass/fonts/helveticaneuecyr-roman-webfont.woff"],"../sass/fonts/helveticaneuecyr-roman-webfont.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59172" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50667" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -6,11 +6,114 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="/style.28097f41.css">
         <title>Temple test</title>
+        
     <script src="/style.28097f41.js"></script></head>
     <body>
         <div class="wrapper">
-            <h1 class="title"></h1>
-            <li>parcel</li>
+            <main>
+                <h1 class="title">FTL: Прямая машина</h1>
+                <section class="route">
+                    
+    <div class="section-header">
+        <img src="/first.1a959272.svg" alt="gay">
+        <h3>Маршрут</h3>
+    </div>
+
+                    
+                        <label for="origin">Откуда</label>
+                        <input type="text" name="origi" id="origin">
+                        <label for="destination">Куда</label>
+                        <input type="text" name="" id="destination">
+                    
+                </section>
+
+                <section class="transport">
+                    
+    <div class="section-header">
+        <img src="/second.24e0984d.svg" alt="gay">
+        <h3>Транспорт</h3>
+    </div>
+
+                    <div class="form-wrapper">
+                        <div class="select-item">
+                            <label for="weightLimit">Грузоподъемность</label>
+                            <select name="" id="weightLimit">
+                                <option value="none" selected="">Не выбрано</option>
+                            </select>
+                        </div>
+                        <div class="select-item">
+                            <label for="loadingMethod">Способ погрузки</label>
+                            <select name="" id="loadingMethod">
+                                <option value="back" selected="">Задняя</option>
+                                <option value="front" selected="">Передняя</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cargo">
+                    
+    <div class="section-header">
+        <img src="/third.5b328e2e.svg" alt="gay">
+        <h3>Груз</h3>
+    </div>
+
+                    <div class="form-wrapper">
+                        <div class="select-item--cargoType">
+                            <label for="cargoType">Тип груза</label>
+                            <select name="" id="cargoType">
+                                <option value="none" selected="">Не выбрано</option>
+                            </select>
+                        </div>
+                        <div class="select-item--hazardClass">
+                            <label for="hazardClass">Класс опасности</label>
+                            <select name="" id="hazardClass">
+                                <option value="back" selected="">Класс 5 — Окисляющие вещества и органические перекиси</option>
+                            </select>
+                        </div>
+                        <div class="select-item--worth">
+                            <label for="worth">Объявленная ценность, &#8381</label>
+                            <input type="number" name="" id="worth" min="1" placeholder="&#8805 1">
+                        </div>
+                    </div>
+                    <input type="checkbox" name="" id="tempRegime">
+                    <label for="tempRegime">Требуется температурный режим</label>
+                </section>
+                <section class="time">
+                    
+    <div class="section-header">
+        <img src="/fourth.1bfec63c.svg" alt="gay">
+        <h3>Время</h3>
+    </div>
+
+                    
+    <div class="address-item">
+        <div>
+            <input type="radio" name="" id="address">
+            <label for="address">home</label>
+        </div>
+        <button class="active">Не выбрано</button>
+    </div>
+
+                    
+    <div class="address-item">
+        <div>
+            <input type="radio" name="" id="address">
+            <label for="address">home</label>
+        </div>
+        <button class="blocked">Не выбрано</button>
+    </div>
+
+                    <label for="comment">Комментарий к заказу</label>
+                    <textarea name="" id="comment" cols="30" rows="10" placeholder="Укажите особенности въезда на 
+                    территорию склада или подъезда к адресу"></textarea>
+                </section>
+            </main>
+            <aside>
+                <p>Для расчета 
+                стоимости необходимо ввести параметры груза, 
+                пункты отправки и прибытия.</p>
+            </aside>
         </div>
     </body>
 </html>

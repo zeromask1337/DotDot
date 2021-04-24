@@ -6,11 +6,79 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="../sass/style.scss" />
         <title>Temple test</title>
+        {% import "./components.njk" as components %}
     </head>
     <body>
         <div class="wrapper">
-            <h1 class="title">{{title}}</h1>
-            {% include "./buttons/lol.njk" %}
+            <main>
+                <h1 class="title">{{title}}</h1>
+                <section class="route">
+                    {{components.h3('./pictures/first.svg', 'Маршрут')}}
+                    
+                        <label for="origin">Откуда</label>
+                        <input type="text" name="origi" id="origin">
+                        <label for="destination">Куда</label>
+                        <input type="text" name="" id="destination">
+                    
+                </section>
+
+                <section class="transport">
+                    {{components.h3('./pictures/second.svg', 'Транспорт')}}
+                    <div class="form-wrapper">
+                        <div class="select-item">
+                            <label for="weightLimit">Грузоподъемность</label>
+                            <select name="" id="weightLimit">
+                                <option value="none" selected>Не выбрано</option>
+                            </select>
+                        </div>
+                        <div class="select-item">
+                            <label for="loadingMethod">Способ погрузки</label>
+                            <select name="" id="loadingMethod">
+                                <option value="back" selected>Задняя</option>
+                                <option value="front" selected>Передняя</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cargo">
+                    {{components.h3('./pictures/third.svg', 'Груз')}}
+                    <div class="form-wrapper">
+                        <div class="select-item--cargoType">
+                            <label for="cargoType">Тип груза</label>
+                            <select name="" id="cargoType">
+                                <option value="none" selected>Не выбрано</option>
+                            </select>
+                        </div>
+                        <div class="select-item--hazardClass">
+                            <label for="hazardClass">Класс опасности</label>
+                            <select name="" id="hazardClass">
+                                <option value="back" selected>Класс 5 — Окисляющие вещества и органические перекиси</option>
+                            </select>
+                        </div>
+                        <div class="select-item--worth">
+                            <label for="worth">Объявленная ценность, &#8381</label>
+                            <input type="number" name="" id="worth" min="1" placeholder="&#8805 1">
+                        </div>
+                    </div>
+                    <input type="checkbox" name="" id="tempRegime">
+                    <label for="tempRegime">Требуется температурный режим</label>
+                </section>
+                <section class="time">
+                    {{components.h3('./pictures/fourth.svg', 'Время')}}
+                    {{components.radio('home', true)}}
+                    {{components.radio('home', false)}}
+                    <label for="comment">Комментарий к заказу</label>
+                    <textarea name="" id="comment" cols="30" rows="10" 
+                    placeholder="Укажите особенности въезда на 
+                    территорию склада или подъезда к адресу"></textarea>
+                </section>
+            </main>
+            <aside>
+                <p>Для расчета 
+                стоимости необходимо ввести параметры груза, 
+                пункты отправки и прибытия.</p>
+            </aside>
         </div>
     </body>
 </html>

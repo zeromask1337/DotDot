@@ -1,5 +1,7 @@
 module.exports = {
     root: "./src",
-    data: { gay: "parcel" },
-    // assetType: "html",
+    data: {
+        title: "FTL: Прямая машина",
+        gay: "parcel",
+    },
 };

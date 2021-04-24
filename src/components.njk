@@ -1,0 +1,17 @@
+{% macro h3(iconUrl, text) %}
+    <div class="section-header">
+        <img src="{{iconUrl}}" alt="gay">
+        <h3>{{text}}</h3>
+    </div>
+{% endmacro %}
+
+{% macro radio(address, isActive) %}
+    <div class="address-item">
+        <div>
+            <input type="radio" name="" id="address">
+            <label for="address">{{address}}</label>
+        </div>
+        <button class="{{ "active" if isActive else "blocked" }}">Не выбрано</button>
+    </div>
+{% endmacro %}
+

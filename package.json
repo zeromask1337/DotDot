@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "demon": "nodemon app.js",
     "dev": "parcel ./src/index.njk",
     "build": "rm -rf ./dist/* && parcel build ./src/index.njk"
   },
